@@ -1,4 +1,17 @@
-num = int(input())
-for i in range(12):
-    total = num*(i+1)
-    print(num,'x',(i+1),'=',total)
+
+
+def write_locomotive():
+    print("          OO ")
+    print("+ - - +    OOO ")
+    print("|  [] |   + - +")
+    print("+ - - - - + - +")
+    print("|             |")
+    print("+ - [] - - [] +")
+
+def write_trams(size):
+    print("+", " - - - - +" * size)
+    print("|", "         |" * size)
+    print("|", "         |" * size)
+    print("|", "         |" * size)
+    print("|", "         |" * size)
+    print("+", " - - - - +" * size," ==")

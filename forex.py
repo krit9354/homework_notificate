@@ -1,4 +1,4 @@
-from forex_python.converter import CurrencyRates
+from forex_python import CurrencyRates
 c = CurrencyRates()
 country1=""
 country2=""

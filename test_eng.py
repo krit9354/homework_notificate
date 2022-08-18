@@ -1,34 +1,29 @@
 import random
 
 a = [
-    ["a chemical used to kill pests","pesticide"],
-    ["a small animal or an insect that causes damage to food or crops,or otherwise human being","pest"],
-    ["a liveing creature","organism"],
-    ["a general class of animals that includes rat , mice, ansd squirrels","rodent"],
-    ["to prevent something from succeeding or from happening in the way that was planned","interfere with"],
-    ["to remove or get rid of","eliminate"],
-    ["to eat in small bites","nibble"],
-    ["small,low brushes","brush"],
-    ["a weed killer","herbicide"],
-    ["unpleasant","harsh"],
-    ["easily infuenced or harmed by something","susceptible to"],
-    ["not harmed or affected by something", "resistant"],
-    ["to change something", "modify"],
-    ["ability", "potential "],
-    ["harmfully", "adversely"],
-    ["the state of depending on someone or something ", "reliance"],
-    ["describes a substance which causes cancer", "carcinogenic"],
-    ["making something less pure or making it poisonous", "contamination"],
-    ["to control something", "regulate"],
-    ["a lot of disagreement or argument about something", "controversy"]
+    ["localing an object using sound waves and echoes","echolocation"],
+    ["to notice, to observe, to find ","detect"],
+    ["able to sense or feel in a stronger than normal way","sensitive"],
+    ["to adjust","adapt"],
+    ["strange ","peculiar"],
+    ["to (cause to) move up or away atter hiting a surface","bounce"],
+    ["to fill tightly or completely by pushing something into something else","stuff"],
+    ["the area at the back of the eye that receive light and send pictures of what the eye sees to thebrain","retina"],
+    ["very modern and with all the newest features","cutting-edge"],
+    ["to bring back into use","restore"],
+    ["causing a lot of damage or destruction","devastating"],
+    ["a nerve ending that reacts to a change, such as heat or cold, in the body by sending a message to the central nervous system","receptor"],
+    ["to pass something from one place to another","transmit"],
+    ["difficult to use, do, or deal with","awkward"],
+    ["simple and not skillfully done or made","crude"]
     ]
 
 point = 0
-d = 10
-
+start = 1   #ข้อที่เริ่ม
+last = 15    #ข้อสุเท้าย
 round  = []
-while len(round) != d:
-    c = random.randint(0,d-1)
+while len(round) != (last-start+1):
+    c = random.randint(start-1,last-1)
     if c not in round:
         round.append(c)
 
@@ -40,7 +35,7 @@ for i in round:
         point += 1
     else:
         print("wrong the correct is :"+a[i][1])
-print("your score :",point)
+print("your score :",point,"/",last-start+1)
 
 
 

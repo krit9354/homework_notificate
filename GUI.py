@@ -9,3 +9,5 @@ name = Entry(window)
 name.place(x=100,y=50)
 
 window.mainloop()
+
+pri()
